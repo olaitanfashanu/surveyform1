@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Customer Satisfaction Survey Form</h1>
+    <p id="description" class="description text-center">Thank you for taking the time to help us improve our services.</p>
+  </header>
+  <form id="survey-form">
+   
+    <p>Please fill in the information below.</p>
+    <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+      <input 
+             type="text" 
+             id="name" 
+             name="name"
+             class="form-control"
+             placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+      <input 
+             type="email" 
+             id="email" 
+             name="email" 
+             class="form-control"
+             placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input 
+             type="number" 
+             id="age" 
+             name="age" 
+             class="form-control"
+             min="12" max="100" placeholder="age" required>
+   </div>
+   <div class="form-group">
+    <p>Which option best describes your current situation?</p>
+    <select id="dropdown" name="profession" class="form-control" required>
+      <option disabled selected value>Select an option</option>
+      <option value="student">Student</option>
+      <option value="unemployed">Unemployed</option>
+      <option value="employed">Employed</option>
+      <option value="entrepreneur">Entrepreneur</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <p>Would you recommend us to a friend?</p>
+    <label>
+    <input name="user-recommend" type="radio" class="input-radio" value="definitely" checked>Definitely</label><br>
+     <label>
+    <input name="user-recommend" type="radio" class="input-radio" value="maybe">Maybe</label><br>
+     <label>
+    <input name="user-recommend" type="radio" class="input-radio" value="not sure">Not sure</label>
+  </div>
+  <div class="form-group">
+     <p>Which is your favourite NewTown outlet?</p>
+    <select id="favourite-outlet" name="favourite-outlet" class="form-control" required>
+      <option disabled selected value>Select an option</option>
+      <option value="mainland outlet">Mainland outlet</option>
+      <option value="island outlet">Island outlet</option>
+      <option value="lowland outlet">Lowland outlet</option>
+      <option value="highland outlet">Highland outlet</option>
+      <option value="preferNot">Prefer not to say</option>
+    </select>
+    
+  </div>
+  <div class="form-group">
+    <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+    <label>
+       <input name="improve" type="checkbox" class="input-checkbox" value="menu">Menu</label><br>
+    <label>
+      <input name="improve" type="checkbox" class="input-checkbox" value="pickup">Pickup</label><br>
+    <label>
+      <input name="improve" type="checkbox" class="input-checkbox" value="delivery">Delivery</label><br>
+    <label>
+      <input name="improve" type="checkbox" class="input-checkbox" value="self-service">Self-Service</label><br>
+    <label>
+      <input name="improve" type="checkbox" class="input-checkbox" value="payment">Payment options</label><br>
+    <label>
+      <input name="improve" type="checkbox" class="input-checkbox" value="website">Website</label><br>
+    <label>
+      <input name="improve" type="checkbox" class="input-checkbox" value="more outlets">More Outlets</label><br>
+  </div>
+      
+  <div class="form-group">
+    <p>Any other comments or suggestions?</p>
+    <textarea name="comment" class="input-text" id="comment" rows="20" cols="50" placeholder="Enter your comments or suggestions here..."></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">Submit</button> 
+   </div>
+    
+  </form>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
